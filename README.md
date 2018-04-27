@@ -4,9 +4,9 @@ HELLO THIS IS THE ROBOTICS CODING THING FOR 2017-2018
 
 TODO list:
 * make everything 10x10x10
+* charge battery from lunch to end of school
 * add batteries
-* remove tire from clamp
-* ask kleindolph how to install battery beneath circuitry and make a power switch to connect to circuitry
+* make a power switch to connect to circuitry
 * find longer red white black wire
 * turn sensors on during first five seconds (so that the sensors don't go 0000 when it turns on)
 

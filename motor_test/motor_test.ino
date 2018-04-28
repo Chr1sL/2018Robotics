@@ -8,6 +8,8 @@ Adafruit_DCMotor *M2 = AFMS.getMotor(2);
 Adafruit_DCMotor *M3 = AFMS.getMotor(3);
 Adafruit_DCMotor *M4 = AFMS.getMotor(4);
 
+  int count = 0;
+
 void setup() {
   pinMode (2, INPUT); 
   pinMode (5, INPUT); 
@@ -24,26 +26,34 @@ void setup() {
   M1->setSpeed(150);
   M1->run(FORWARD);
   // turn on motor
-  M1->run(RELEASE);
+
 
   M2->setSpeed(150);
   M2->run(FORWARD);
   // turn on motor
-  M2->run(RELEASE);
 
   M3->setSpeed(150);
   M3->run(FORWARD);
   // turn on motor
-  M3->run(RELEASE);
 
   M4->setSpeed(150);
   M4->run(FORWARD);
   // turn on motor
-  M4->run(RELEASE);
+
+
 
 }
 
 void loop() {
+  if ( count < 2000) {
+    M1->run(RELEASE);
+      M2->run(RELEASE);
+        M3->run(RELEASE);
+          M4->run(RELEASE);
+  }
+  count = count ++;
+
+
   // put your main code here, to run repeatedly:
 
 }
